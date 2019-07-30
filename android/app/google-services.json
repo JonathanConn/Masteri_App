@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "423279197393",
+    "firebase_url": "https://masteri-9e54c.firebaseio.com",
+    "project_id": "masteri-9e54c",
+    "storage_bucket": "masteri-9e54c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423279197393:android:349f4501bc8cd173",
+        "android_client_info": {
+          "package_name": "com.example.masteri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423279197393-71fsjh1ng808et5r9p5sd2nfejallg96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2VnmebEj0GKk6p7QafdORdndVTb939Rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423279197393-71fsjh1ng808et5r9p5sd2nfejallg96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
