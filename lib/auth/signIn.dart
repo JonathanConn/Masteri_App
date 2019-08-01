@@ -52,6 +52,11 @@ class _LoginPageState extends State<LoginPage>{
               child: Text('Sign in'),
             ),
 
+            RaisedButton(
+              onPressed: signUp,
+              child: Text('Sign up'),
+            ),
+
           ],
         ),
       )
@@ -69,9 +74,21 @@ class _LoginPageState extends State<LoginPage>{
       }catch(e){
         print(e.message);
       }
-
     }
+  }
 
+   Future<void> signUp() async{
+    final formState = _formKey.currentState;
+    
+    if(formState.validate()){
+      formState.save();
+      try{
+        await FirebaseAuth.instance.createUserWithEmailAndPassword(email: _email, password: _password);
+        Navigator.push(context, MaterialPageRoute(builder: (context) => home()));
+      }catch(e){
+        print(e.message);
+      }
+    }
   }
 
 }
