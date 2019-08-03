@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:masteri/auth/signIn.dart';
-import 'package:masteri/pages/home.dart' as prefix0;
+import 'package:masteri/pages/home.dart';
 
 
 void main() => runApp(new MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       //home: new LoginPage(),
-      home: new prefix0.home(),
+      home: new home(),
     );
   }
 
