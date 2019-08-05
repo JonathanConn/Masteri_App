@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:masteri/pages/placeholder_widget.dart';
+import 'package:masteri/auth/signIn.dart';
+
 class home extends StatefulWidget {
   @override
   _homeState createState() => _homeState();
@@ -8,9 +10,9 @@ class home extends StatefulWidget {
 class _homeState extends State<home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    PlaceholderWidget(Colors.white),
+    PlaceholderWidget(Colors.red),
     PlaceholderWidget(Colors.deepOrange),
-    PlaceholderWidget(Colors.green)
+    LoginPage()
   ];
 
  @override
