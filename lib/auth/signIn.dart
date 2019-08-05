@@ -14,10 +14,9 @@ class _LoginPageState extends State<LoginPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Sign in'),
-      ), 
-      body: Form(
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: Form(
         key: _formKey,
         child: Column(
           children: <Widget>[
@@ -59,6 +58,7 @@ class _LoginPageState extends State<LoginPage>{
 
           ],
         ),
+      )
       )
     );
   }

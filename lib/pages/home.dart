@@ -19,7 +19,7 @@ class _homeState extends State<home> {
  Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(
-       title: Text('My Flutter App'),
+       title: Text('Masteri'),
      ),
      body: _children[_currentIndex], // new
      bottomNavigationBar: BottomNavigationBar(
@@ -27,16 +27,16 @@ class _homeState extends State<home> {
        currentIndex: _currentIndex, // new
        items: [
          new BottomNavigationBarItem(
-           icon: Icon(Icons.home),
-           title: Text('Home'),
+           icon: Icon(Icons.calendar_today),
+           title: Text('Cal'),
          ),
          new BottomNavigationBarItem(
-           icon: Icon(Icons.mail),
-           title: Text('Messages'),
+           icon: Icon(Icons.equalizer),
+           title: Text('Chart'),
          ),
          new BottomNavigationBarItem(
-           icon: Icon(Icons.person),
-           title: Text('Profile')
+           icon: Icon(Icons.account_box),
+           title: Text('Prof')
          )
        ],
      ),
