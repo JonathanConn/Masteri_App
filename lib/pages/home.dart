@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:masteri/data/score.dart';
 import 'package:masteri/pages/placeholder_widget.dart';
+import 'package:masteri/auth/signIn.dart';
+
 class home extends StatefulWidget {
   @override
   _homeState createState() => _homeState();
@@ -8,16 +11,16 @@ class home extends StatefulWidget {
 class _homeState extends State<home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    PlaceholderWidget(Colors.white),
-    PlaceholderWidget(Colors.deepOrange),
-    PlaceholderWidget(Colors.green)
+    PlaceholderWidget(Colors.red),
+    ScorePage(),
+    LoginPage()
   ];
 
  @override
  Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(
-       title: Text('My Flutter App'),
+       title: Text('Masteri'),
      ),
      body: _children[_currentIndex], // new
      bottomNavigationBar: BottomNavigationBar(
@@ -25,16 +28,16 @@ class _homeState extends State<home> {
        currentIndex: _currentIndex, // new
        items: [
          new BottomNavigationBarItem(
-           icon: Icon(Icons.home),
-           title: Text('Home'),
+           icon: Icon(Icons.calendar_today),
+           title: Text('Cal'),
          ),
          new BottomNavigationBarItem(
-           icon: Icon(Icons.mail),
-           title: Text('Messages'),
+           icon: Icon(Icons.equalizer),
+           title: Text('Chart'),
          ),
          new BottomNavigationBarItem(
-           icon: Icon(Icons.person),
-           title: Text('Profile')
+           icon: Icon(Icons.account_box),
+           title: Text('Prof')
          )
        ],
      ),
