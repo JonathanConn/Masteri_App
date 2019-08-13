@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masteri/data/score.dart';
 import 'package:masteri/pages/placeholder_widget.dart';
 import 'package:masteri/auth/signIn.dart';
 
@@ -11,7 +12,7 @@ class _homeState extends State<home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     PlaceholderWidget(Colors.red),
-    PlaceholderWidget(Colors.deepOrange),
+    ScorePage(),
     LoginPage()
   ];
 
